@@ -4,7 +4,7 @@ public class swapTwoNumbers {
     public static void main(String[] args) {
         //Swap two variable values without using a third variable
 
-        int a = 5;
+        int a = 21;
         int b = 10;
 
         System.out.println("before swap: " + a);
@@ -12,6 +12,7 @@ public class swapTwoNumbers {
 
         b = b - a;
         a = b + a;
+        b = a - b;
 
         System.out.println("---------------------------------");
         System.out.println("after swap: " + a);
