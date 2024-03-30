@@ -3,4 +3,10 @@ package nurgulia.week1;
 //Write a method that can divide two numbers without using division operator
 public class divisionWithoutOperator {
 
+
+    public static void divideWithoutOperator(){
+
+
+    }
+
 }
