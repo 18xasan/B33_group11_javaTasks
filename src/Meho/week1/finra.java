@@ -9,7 +9,6 @@ public class finra {
         //for numbers which are a multiple of both 3 and 5, print "FINRA" instead of the number.
 
         FINRA();
-
     }
 
     public static void FINRA() {
