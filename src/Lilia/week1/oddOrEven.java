@@ -17,5 +17,4 @@ public class oddOrEven {
             System.out.println(number + " is odd");
         }
     }
-
 }

@@ -7,7 +7,6 @@ public class divisionWithoutOperator {
 
         division(0,24,3);
     }
-
     public static void division(int div, int num1, int num2){
         while (num1 >= num2) {
             num1 -= num2;
