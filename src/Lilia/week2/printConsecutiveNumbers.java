@@ -50,7 +50,7 @@ public class printConsecutiveNumbers {
              else if (i%2 ==0 && i % 5==0) {
                 System.out.println("CodilityCoders");
             }
-             else if (i%3 == 0 && i %5 ==0) {
+             else if (i%3 ==0 && i %5 ==0) {
                 System.out.println("TestCoders");
             }
             else if (i % 2 ==0){
