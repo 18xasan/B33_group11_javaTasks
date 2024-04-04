@@ -1,4 +1,4 @@
-package week2;
+package ricardo.week2;
 
 public class Divisibleby3_5_15 {
     public static void main(String[] args) {
@@ -15,6 +15,20 @@ Divisible By 3 3 6 9 12 18 21 24 27 33 36 39 42 48 51 54 57 63 66 69 72 78 81 84
 
 */
 
+        for (int number = 1; number <= 100; number++) {
+            if (number % 15 == 0) { // divisible by 3, 5 and 15
+                System.out.println(number + "(divisible by 15");
+            } else if (number % 3 == 0) { // divisible by 3 but not 15
+                System.out.println(number + "(divisible by 3");
+            } else if (number % 5 == 0) { // divisible by 5 but not 15
+                System.out.println(number + "(divisible by 5");
+
+            }
+
+
+        }
+
     }
+
 }
 

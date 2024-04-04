@@ -1,4 +1,6 @@
-package atil.week2;
+package Lilia.week2;
+
+import nurgulia.week2.CodilityTestCoders;
 
 public class printConsecutiveNumbers {
     public static void main(String[] args) {
@@ -29,33 +31,43 @@ public class printConsecutiveNumbers {
         17
 */
 
-            printConsecutiveNumbers(30);
-        }
-        public static void printConsecutiveNumbers(int n) {
-            String result = "";
-            for (int i = 1; i <= n; i++) {
-                if (i % 2 == 0 && i % 3 == 0 && i % 5 ==0){
-                    result = "CodibilityTestCoders";
-                } else if (i % 2 == 0 && i % 3 == 0 ) {
-                    result = "CodibilityTest";
-                } else if (i % 2 == 0 && i % 5 == 0) {
-                    result = "CodibilityCoders";
-                } else if (i % 3 == 0 && i % 5 == 0) {
-                    result = "TestCoders";
-                } else if (i % 2 == 0 ){
-                    result = "Codibility";
-                }else if (i % 3 == 0){
-                    result = "Test";
-                } else if (i % 5 == 0) {
-                    result = "Coders";
-                }else {
-                    result = i + "";
-                }
-                System.out.println(result);
+
+        int N = 24;
+        //String str1 = "Codility";
+        //String str2 = "Test";
+        //String str3 = "Coders";
+
+        for (int i = 1 ; i <= N; i++) {
+
+            if (i % 2 == 0 && i % 3==0 && i % 5 == 0) {
+                System.out.println("CodilityTestCoders");
             }
+
+            else if (i % 2 == 0 && i % 3==0){
+                System.out.println("CodilityTest");
+
+            }
+             else if (i%2 ==0 && i % 5==0) {
+                System.out.println("CodilityCoders");
+            }
+             else if (i%3 ==0 && i %5 ==0) {
+                System.out.println("TestCoders");
+            }
+            else if (i % 2 ==0){
+                System.out.println("Codility");
+            }
+            else if ( i % 3==0){
+                System.out.println("Test");
+            }
+            else if (i % 5 == 0) {
+                System.out.println("Coders");
+            }
+            else  {
+                System.out.println(i);
+            }
+        }
+
     }
 
+
 }
-
-
-
