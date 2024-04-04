@@ -2,7 +2,36 @@ package ricardo.week2;
 
 public class printConsecutiveNumbers {
     public static void main(String[] args) {
-      /*  Write a function: that, given a positive integer N, prints the consecutive numbers from 1 to N,
+
+        // Declare and initialize variables N
+
+        int n = 24;
+
+        //For loop to iterate 1 to N and the loop variable i represents the number
+
+        for (int i = 1; 1 <= n; i++) {
+
+            // Here i will use if conditions to check the divisability conditions for i using our % operator
+            if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
+                System.out.println("CodibilityTestCoders");
+            } else if (i % 2 == 0 && i % 3 == 0) {
+                System.out.println("CodibilityTest");
+            } else if (i % 2 == 0 && i % 5 == 0) {
+                System.out.println("CodibilityCoders");
+            } else if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("TestCoders");
+            } else if (i % 2 == 0) {
+                System.out.println("Codibility");
+            } else if (i % 3 == 0) {
+                System.out.println("Test");
+            } else if (i % 5 == 0) {
+                System.out.println("Coders");
+            } else {
+                System.out.println(i);
+            }
+
+
+        }      /*  Write a function: that, given a positive integer N, prints the consecutive numbers from 1 to N,
       each on a separate line. However, any number divisible by 2, 3 or 5 should be replaced by the word Codility,
       Test or Coders respectively. If a number is divisible by more than one of the numbers: 2,3 or 5,
       it should be replaced by a concatenation of the respective words Codility, Test and Coders in this given order.
