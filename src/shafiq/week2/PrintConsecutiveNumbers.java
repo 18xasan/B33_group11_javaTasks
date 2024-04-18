@@ -10,11 +10,11 @@ public class PrintConsecutiveNumbers {
             String result = "";
             if (number % 2 == 0) {
                 result += "Codility";
-            }else if (number % 3 == 0) {
+            } else if (number % 3 == 0) {
                 result += "Test";
-            }else if (number % 5 == 0) {
+            } else if (number % 5 == 0) {
                 result += "Coders";
-            }else{
+            } else {
                 result = Integer.toString(number);
             }
             System.out.println(result);

@@ -14,11 +14,9 @@ public class DivisibleBy_3_5_15UsingStringBuilder {
         for (int number = 1; number <= 100; number++) {
             if (number % 15 == 0) {
                 divisibleBy15.append(" ").append(number);
-            }
-            else if (number % 5 == 0) {
+            } else if (number % 5 == 0) {
                 divisibleBy5.append(" ").append(number);
-            }
-            else if (number % 3 == 0) {
+            } else if (number % 3 == 0) {
                 divisibleBy3.append(" ").append(number);
             }
         }
