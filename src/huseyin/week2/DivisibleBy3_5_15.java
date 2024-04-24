@@ -1,4 +1,4 @@
-package Meho.week2;
+package huseyin.week2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,3 +41,13 @@ public class DivisibleBy3_5_15 {
 
     }
 }
+
+
+
+
+
+
+
+
+
+
