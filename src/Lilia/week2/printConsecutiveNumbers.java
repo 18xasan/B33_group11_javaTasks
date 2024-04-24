@@ -1,4 +1,6 @@
-package Liam.week2;
+package Lilia.week2;
+
+import nurgulia.week2.CodilityTestCoders;
 
 public class printConsecutiveNumbers {
     public static void main(String[] args) {
@@ -28,32 +30,43 @@ public class printConsecutiveNumbers {
         Codility
         17
 */
-        solution(15);
 
-    }
 
-    //Solution:
-    public static void solution(int N) {
-        String result = "";
-        for (int i = 1; i <= N; i++) {
-            if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0)
-                result += "CodilityTestCoders\n";
-            else if (i % 2 == 0 && i % 3 == 0)
-                result += "CodilityTest\n";
-            else if (i % 2 == 0 && i % 5 == 0)
-                result += "CodilityCoders\n";
-            else if (i % 3 == 0 && i % 5 == 0)
-                result += "TestCoders\n";
-            else if (i % 2 == 0)
-                result += "Codility\n";
-            else if (i % 5 == 0)
-                result += "Coders\n";
-            else if (i % 3 == 0)
-                result += "Test\n";
-            else
-                result += i + "\n";
+        int N = 24;
+        //String str1 = "Codility";
+        //String str2 = "Test";
+        //String str3 = "Coders";
+
+        for (int i = 1 ; i <= N; i++) {
+
+            if (i % 2 == 0 && i % 3==0 && i % 5 == 0) {
+                System.out.println("CodilityTestCoders");
+            }
+
+            else if (i % 2 == 0 && i % 3==0){
+                System.out.println("CodilityTest");
+
+            }
+             else if (i%2 ==0 && i % 5==0) {
+                System.out.println("CodilityCoders");
+            }
+             else if (i%3 ==0 && i %5 ==0) {
+                System.out.println("TestCoders");
+            }
+            else if (i % 2 ==0){
+                System.out.println("Codility");
+            }
+            else if ( i % 3==0){
+                System.out.println("Test");
+            }
+            else if (i % 5 == 0) {
+                System.out.println("Coders");
+            }
+            else  {
+                System.out.println(i);
+            }
         }
-        System.out.println(result);
+
     }
 
 

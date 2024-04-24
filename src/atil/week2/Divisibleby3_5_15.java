@@ -37,8 +37,15 @@ Divisible By 3 3 6 9 12 18 21 24 27 33 36 39 42 48 51 54 57 63 66 69 72 78 81 84
             }
         }
         System.out.println("Divisible By 15 = " + divisibleBy15);
+<<<<<<<<< Temporary merge branch 1
+        System.out.println("Divisible By 3 = " + divisibleBy3);
+        System.out.println("Divisible By 5 = " + divisibleBy5);
+
+
+=========
         System.out.println("Divisible By 5 = " + divisibleBy5);
         System.out.println("Divisible By 3 = " + divisibleBy3);
+>>>>>>>>> Temporary merge branch 2
     }
 }
 

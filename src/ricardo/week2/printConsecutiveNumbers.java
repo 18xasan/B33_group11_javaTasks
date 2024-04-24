@@ -1,8 +1,9 @@
-package Liam.week2;
+package ricardo.week2;
 
 public class printConsecutiveNumbers {
     public static void main(String[] args) {
-      /*  Write a function: that, given a positive integer N, prints the consecutive numbers from 1 to N,
+
+/*  Write a function: that, given a positive integer N, prints the consecutive numbers from 1 to N,
       each on a separate line. However, any number divisible by 2, 3 or 5 should be replaced by the word Codility,
       Test or Coders respectively. If a number is divisible by more than one of the numbers: 2,3 or 5,
       it should be replaced by a concatenation of the respective words Codility, Test and Coders in this given order.
@@ -28,33 +29,34 @@ public class printConsecutiveNumbers {
         Codility
         17
 */
-        solution(15);
 
+        printConsecutiveNumbers(50);
     }
+    public static void printConsecutiveNumbers(int n) {
 
-    //Solution:
-    public static void solution(int N) {
+
+
         String result = "";
-        for (int i = 1; i <= N; i++) {
-            if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0)
-                result += "CodilityTestCoders\n";
-            else if (i % 2 == 0 && i % 3 == 0)
-                result += "CodilityTest\n";
-            else if (i % 2 == 0 && i % 5 == 0)
-                result += "CodilityCoders\n";
-            else if (i % 3 == 0 && i % 5 == 0)
-                result += "TestCoders\n";
-            else if (i % 2 == 0)
-                result += "Codility\n";
-            else if (i % 5 == 0)
-                result += "Coders\n";
-            else if (i % 3 == 0)
-                result += "Test\n";
-            else
-                result += i + "\n";
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 0 && i % 3 == 0 && i % 5 ==0){
+                result = "CodibilityTestCoders";
+            } else if (i % 2 == 0 && i % 3 == 0 ) {
+                result = "CodibilityTest";
+            } else if (i % 2 == 0 && i % 5 == 0) {
+                result = "CodibilityCoders";
+            } else if (i % 3 == 0 && i % 5 == 0) {
+                result = "TestCoders";
+            } else if (i % 2 == 0 ){
+                result = "Codibility";
+            }else if (i % 3 == 0){
+                result = "Test";
+            } else if (i % 5 == 0) {
+                result = "Coders";
+            }else {
+                result = i + "";
+            }
+            System.out.println(result);
         }
-        System.out.println(result);
     }
-
 
 }

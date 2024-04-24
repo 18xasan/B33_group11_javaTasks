@@ -29,6 +29,34 @@ public class printConsecutiveNumbers {
         17
 */
 
+<<<<<<<<< Temporary merge branch 1
+        printConsecutiveNumbers(30);
+    }
+        public static void printConsecutiveNumbers(int n) {
+            String result = "";
+            for (int i = 1; i <= n; i++) {
+                if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
+                    result = "CodibilityTestCoders";
+                } else if (i % 2 == 0 && i % 3 == 0) {
+                    result = "CodibilityTest";
+                } else if (i % 2 == 0 && i % 5 == 0) {
+                    result = "CodibilityCoders";
+                } else if (i % 3 == 0 && i % 5 == 0) {
+                    result = "TestCoders";
+                } else if (i % 2 == 0) {
+                    result = "Codibility";
+                } else if (i % 3 == 0) {
+                    result = "Test";
+                } else if (i % 5 == 0) {
+                    result = "Coders";
+                } else {
+                    result = i + "";
+                }
+                System.out.println(result);
+            }
+    }
+}
+=========
             printConsecutiveNumbers(30);
         }
         public static void printConsecutiveNumbers(int n) {
@@ -59,3 +87,4 @@ public class printConsecutiveNumbers {
 
 
 
+>>>>>>>>> Temporary merge branch 2

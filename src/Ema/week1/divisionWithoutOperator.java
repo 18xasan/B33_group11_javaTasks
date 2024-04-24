@@ -1,4 +1,4 @@
-package khasan.week1;
+package Ema.week1;
 
 public class divisionWithoutOperator {
     public static void main(String[] args) {
