@@ -29,33 +29,31 @@ public class printConsecutiveNumbers {
         17
 */
 
-            printConsecutiveNumbers(30);
-        }
+
+        printConsecutiveNumbers(30);
+    }
         public static void printConsecutiveNumbers(int n) {
             String result = "";
             for (int i = 1; i <= n; i++) {
-                if (i % 2 == 0 && i % 3 == 0 && i % 5 ==0){
+                if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
                     result = "CodibilityTestCoders";
-                } else if (i % 2 == 0 && i % 3 == 0 ) {
+                } else if (i % 2 == 0 && i % 3 == 0) {
                     result = "CodibilityTest";
                 } else if (i % 2 == 0 && i % 5 == 0) {
                     result = "CodibilityCoders";
                 } else if (i % 3 == 0 && i % 5 == 0) {
                     result = "TestCoders";
-                } else if (i % 2 == 0 ){
+                } else if (i % 2 == 0) {
                     result = "Codibility";
-                }else if (i % 3 == 0){
+                } else if (i % 3 == 0) {
                     result = "Test";
                 } else if (i % 5 == 0) {
                     result = "Coders";
-                }else {
+                } else {
                     result = i + "";
                 }
                 System.out.println(result);
             }
     }
-
 }
-
-
 
