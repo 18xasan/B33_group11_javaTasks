@@ -4,7 +4,7 @@ public class PrimeNumber {
     public static void main(String[] args) {
 
         // Write a method that can check if a number is prime or not
-        int number = 17; // Example number to check
+        int number = 0; // Example number to check
 
         if (isPrime(number)) {
             System.out.println(number + " is a prime number.");
