@@ -14,10 +14,9 @@ public class ReverseNegativeNumber {
 
     }
     public static int reverseNegativeNumber(int number){
-        //-4456
         String num = String.valueOf(number);
         String reversed="";
-        for(int i = num.length()-1;i>=1;i--){
+        for(int i = num.length()-1; i>=1; i--){
             reversed += num.charAt(i);
         }
         return Integer.parseInt(reversed);
