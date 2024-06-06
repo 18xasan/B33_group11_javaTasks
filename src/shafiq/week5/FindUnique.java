@@ -28,6 +28,7 @@ public class FindUnique {
         String result = "";
         for (int i = 0; i < str.length(); i++) {
             if (!result.contains(String.valueOf(str.charAt(i)))) {
+                result += str.charAt(i);
                 // If the current character at index 'i' does not exist in 'result',
                 // add it to 'result'
             }
