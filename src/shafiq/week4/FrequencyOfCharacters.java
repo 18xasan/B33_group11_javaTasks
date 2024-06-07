@@ -59,8 +59,8 @@ public class FrequencyOfCharacters {
      */
     public static String frequencyOfChar1(String str) {
         Map<Character, Integer> countMap = new HashMap<>();
-        for (char c : str.toCharArray()) {
-            countMap.put(c, countMap.getOrDefault(c, 0) + 1);
+        for (char each : str.toCharArray()) {
+            countMap.put(each, countMap.getOrDefault(each, 0) + 1);
         }
 
         StringBuilder result = new StringBuilder();
