@@ -13,7 +13,7 @@ package shafiq.week6;public class passwordValidation2 {
     }
 
     /**
-     * Method to check if password is valid or not.
+     * Method to check if the password is valid or not.
      * @param password
      * @return boolean
      */
