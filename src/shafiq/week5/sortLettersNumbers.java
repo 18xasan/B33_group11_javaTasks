@@ -21,6 +21,8 @@ OutPut: "CD015ACCCG011899"*/
     //Print the six desired versions of the combined sorted strings.
 
 
+
+
         public static void main(String[] args) {
             String s = "DC501GCCCA098911";
             String digits = s.replaceAll("\\D+","");
