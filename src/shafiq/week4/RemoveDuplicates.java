@@ -12,7 +12,7 @@ public class RemoveDuplicates {
 
     public static void main(String[] args) {
         // Test input
-        String testString = "AAABBBCCC";
+        String testString = "AAAAAABBBBBBCCCCCC";
 
         /**
          * Test {@code RemoveDuplicates.removeDup} method.
