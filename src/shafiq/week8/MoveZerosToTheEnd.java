@@ -36,3 +36,4 @@ output: [1, 2, 3, 4, 0, 0, 0, 0]*/
         System.out.println(Arrays.toString(array));
     }
 }
+// completed
