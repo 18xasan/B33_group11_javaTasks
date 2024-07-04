@@ -10,21 +10,23 @@ output: [1, 2, 3, 4, 0, 0, 0, 0]*/
 
 
     public static void moveZerosToEnd(int[] array) {
-        int count = 0;  // This variable tracks the next position where we can put a non-zero number
+        int nonZeroCount = 0;
 
         // Iterates over the array
         for (int i = 0; i < array.length; i++) {
             // Checking if the current element is non-zero
             if (array[i] != 0) {
-                // Swapping the element at 'count' and 'i'
-                int temp = array[count];
-                array[count] = array[i];
-                array[i] = temp;
-                // Increasing the count. This means next time we encounter a non-zero,
-                // it will be placed at the next location in the array
-                count++;
+                // Swapping the element at 'nonZeroCount' and 'i'
+                swapElementsInArray(array, nonZeroCount, i);
+                nonZeroCount++;
             }
         }
+    }
+
+    public static void swapElementsInArray(int[] array, int firstIndex, int secondIndex) {
+        int temp = array[firstIndex];
+        array[firstIndex] = array[secondIndex];
+        array[secondIndex] = temp;
     }
 
 
