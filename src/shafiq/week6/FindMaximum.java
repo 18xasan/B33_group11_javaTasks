@@ -2,6 +2,8 @@ package shafiq.week6;
 
 public class FindMaximum {
     //Write a method that can find the maximum number from an int Array
+
+
     public static int findMaximum(int[] arr) {
         int max = arr[0];
         for (int i = 1; i < arr.length; i++) {

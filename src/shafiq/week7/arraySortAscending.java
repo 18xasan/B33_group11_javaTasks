@@ -1,7 +1,8 @@
 package shafiq.week7;
 
 public class arraySortAscending {
-    /*Write a return method that can sort an int array in Ascending order without using the sort method of the Arrays class
+    /*Write a return method that can sort an int array in Ascending
+    order without using the sort method of the Arrays class
 Ex: int[] arr = {10, 9, 8, 7};
 arr = Sort(arr); ==>{ 7, 8, 9, 10};*/
 
@@ -20,7 +21,7 @@ arr = Sort(arr); ==>{ 7, 8, 9, 10};*/
 
     public static void main(String[] args) {
 
-        int[] arr = {5, 2, 8, 1, 9};
+        int[] arr = {5, 2, 8, 1, 9,54,69,87,33};
         int[] sortedArr = sortArray(arr);
         for (int num : sortedArr) {
             System.out.print(num + " ");
