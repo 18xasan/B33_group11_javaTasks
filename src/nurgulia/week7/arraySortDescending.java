@@ -6,23 +6,23 @@ Ex: int[] arr = {10,20,7, 8, 90};
 arr = Sort(arr); ==> {90, 20, 10, 8, 7};*/
   public static void main(String[] args) {
       int[] arr = {10, 9, 8, 7};
-      sortArrayAsce(arr);
+      sortArrayDesc(arr);
       for (int i : arr) {
-          System.out.println("arr[i] = " + arr[i]);
+          System.out.println("arr[i] = " + i);
       }
 
   }
 
-    public static int[] sortArrayAsce(int[] arr){
-        int min = arr[0];
-
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i] > min){
-                int temp = arr[i];
-                arr[i] = min;
-                arr[i-1] = temp;
-
-            }
+    public static int[] sortArrayDesc(int[] arr){
+       for (int i = 0;i<arr.length;i++){
+           for (int j = i+1; j < arr.length; j++) {
+               int temp = 0;
+               if (arr[i]<arr[j]){
+                   temp = arr[i];
+                   arr[i] = arr[j];
+                   arr[j] = temp;
+               }
+           }
         }
         return arr;
     }
