@@ -5,6 +5,7 @@ public class reverse {
     Ex: Reverse("ABCD"); ==> DCBA*/
    public static void main(String[] args) {
        String str = "ABCD";
+       System.out.println("str = " + str);
        System.out.println(reversedString(str));
 
        System.out.println(reverseStringWithStringBuilder(str));
